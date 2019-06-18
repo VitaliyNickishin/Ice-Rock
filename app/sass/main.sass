@@ -1,27 +1,19 @@
 @import "colors" //интегрируем переменные с цветами
+@import "interface" 
 
 
 /*Specification*/
 
-ul
-	padding: 0
-	margin: 0
-	list-style: none
 
-p, h1, h5
-	margin: 0
 
-body
- font-family: 'Lato', sans-serif
- font-size: 16px
- font-weight: 400
- color: $body-text
 
-input
- outline: none
- border-top: 0
+.container
+	max-width: 1170px
+
 .buy-power
 	background-color: $bg-main
+
+	/*Левая сторона*/
 .sidebar
 	width: 285px
 	//margin-left: -30px
@@ -64,17 +56,199 @@ input
 				width: 100%
 				height: 100%
 				font-size: 12px
-				font-weight: 700
 				color: $body-text
-				line-height: 19px
 				text-decoration: none
 				text-transform: uppercase
 				line-height: 70px
 				&:hover
 					color: #ef495f
-					//border-left: 6px
-					//background-image: linear-gradient(to bottom, #f0314b 0%, #f65c4a 100%);
- 
+
+/*Правая сторона*/
+.page-power
+	background-color: $bg-power
+	&-header
+		display: flex
+		&__title
+			margin: 45px 236px 22px 30px
+			text-transform: uppercase
+			font-size: 24px
+			font-weight: 700
+			letter-spacing: 2.9px
+		&__btn
+			margin-top: 30px
+			padding: 13px 22px
+			width: 220px
+			height: 40px
+			border-radius: 6px
+			border: 2px solid #202930
+			background-color: #36434c
+			font-size: 14px
+			letter-spacing: 1.69px
+			line-height: 13px
+		&__exit
+			margin-top: 38px
+			a
+				margin-left: 14px
+				text-decoration: none
+				text-transform: uppercase
+		  color: #808080
+				font-size: 12px
+				font-weight: 700
+				letter-spacing: 1.45px
+				line-height: 19px
+	&-body
+		width: 825px
+		height: 660px
+		border-radius: 6px
+		border: 1px solid $border-main
+		background-color: $bg-main
+		&-title
+			margin: 33px 0 0 29px
+			h2
+				font-size: 18px
+				font-weight: 700
+				line-height: 28px
+				text-transform: uppercase
+				letter-spacing: 2.18px
+		&-wrap
+			margin-left: 30px
+			width: 765px
+			height: 460px
+			border-radius: 6px
+			border: 1px solid $border-main
+			background-color: $bg-main
+		&-row
+			display: flex
+			//align-items: center
+			&__text
+				//margin-left: 30px
+				display: flex
+				align-items: center
+				height: 62px
+				width: 445px
+				border: 1px solid $border-main
+				border-top: 0
+				border-left: 0
+				p
+					margin-left: 20px
+					font-size: 16px
+					font-weight: 700
+					//line-height: 26px
+					text-transform: uppercase
+					letter-spacing: 2.74px
+				img
+					margin-left: 18px
+					width: 14px
+					height: 14px
+			&__volume
+				border-bottom: 1px solid $border-main
+				width: 319px
+				height: 62px
+				p
+					margin-left: 30px
+					color: #14cb55
+					font-family: "Lato-Black"
+					font-size: 24px
+					font-weight: 400
+					line-height: 62px
+					text-transform: uppercase
+					letter-spacing: 3.1px
+			&__convertation
+				display: flex
+				align-items: center
+				
+				border-bottom: 1px solid $border-main
+				width: 765px
+				height: 62px
+				&-oval
+					margin-left: 20px
+					height: 8px
+				p
+					margin-left: 12px
+					color: #bbbbbb
+					font-size: 14px
+					font-weight: 700
+					letter-spacing: 2.39px
+				&-info
+					margin-left: 18px
+					width: 14px
+					height: 14px
+			&__panel
+				display: flex
+				position: relative
+				//align-items: center
+				&-power
+					margin-left: 66px
+					position: relative
+					&:before
+						content: 'Rh'
+						bottom: 12px
+						right: 12px
+						text-transform: uppercase
+						position: absolute
+						color: #808080
+						font-size: 24px
+						letter-spacing: 4.1px
+				 label
+						margin-top: 25px
+						display: block
+						font-size: 18px
+						font-weight: 700
+						text-transform: uppercase
+						letter-spacing: 3.08px
+					input
+						//width: 255px
+	     //height: 60px
+				&-symbol
+					margin-left: 62px
+					position: absolute
+					top: 75px
+					left: 310px
+				&-cost
+					margin-left: 125px
+					position: relative
+					&:before
+						content: '$'
+						bottom: 12px
+						right: 16px
+						text-transform: uppercase
+						position: absolute
+						color: #808080
+						font-size: 24px
+					label
+						margin-top: 25px
+						display: block
+						font-size: 18px
+						font-weight: 700
+						text-transform: uppercase
+						letter-spacing: 3.08px
+   &__slider
+				margin-top: 62px
+			&__btn
+				margin: 49px 255px 40px
+				
+	&-footer
+		text-align: center
+		&__text
+			margin-top: 22px
+			text-transform: uppercase
+			letter-spacing: 2.39px
+			color: #aaaaaa
+  &__icon
+			width: 296px
+			margin: 29px 0 0 265px
+			display: flex
+			justify-content: space-between
+
+
+
+	
+
+
+
+
+
+
 
 
 
