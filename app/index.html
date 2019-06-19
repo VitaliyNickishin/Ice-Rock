@@ -39,8 +39,26 @@
 							<li><a href="#" target="_blank">Поддержка</a></li>
 						</ul>
 					</nav>
+					<div class="sidebar-social">
+						<a href="#">
+							<img src="img/facebook_icon.png" alt="facebook">
+						</a>
+						<a href="#">
+							<img src="img/twitter_icon.png" alt="twitter">
+						</a>
+						<a href="#">
+							<img src="img/instagram_icon.png" alt="instagram">
+						</a>
+						<a href="#">
+							<img src="img/telegram_icon.png" alt="telegram">
+						</a>
+						<a href="#">
+							<img src="img/language.png" alt="language">
+						</a>
+					</div><!-- /.sidebar-social -->
 					</div><!-- /.sidebar -->
 				</div><!-- /.col-lg-3 -->
+
 				<div class="col-lg-9">
 					<div class="page-power">
 
@@ -80,19 +98,19 @@
 									<div class="page-power-body-row__panel">
 										<div class="page-power-body-row__panel-power">
 										 <label for="power">Мощность</label>
-											<input type="text" id="i1" name="power">
+											<input type="text" id="power" name="power">
 										</div><!-- /.page-power-body-row__panel-power -->
 										<div class="page-power-body-row__panel-symbol">
 												<img src="img/Combined_Shape.png" alt="Combined_Shape">
 										</div><!-- /.page-power-body-row__symbol -->
 										<div class="page-power-body-row__panel-cost">
 											<label for="cost">Стоимость</label>
-											<input type="text" id="i2" name="cost">
+											<input type="text" id="cost" name="cost">
 										</div><!-- /.page-power-body-row__panel-cost -->
           
 									</div><!-- /.page-power-body-row__panel -->
 									<div class="page-power-body-row__slider">
-										<input type="range" min="0" max="9999" value="500" step="100" class="slider" id="myRange" oninput="fun1()">
+										<input type="range" min="0" max="10000" value="500" step="100" class="slider" id="myRange" oninput="calc()">
 									</div><!-- /.page-power-body-row__slider -->
 
 									<div class="page-power-body-row__btn">
@@ -112,10 +130,11 @@
 								</div><!-- /.page-power-footer__icon -->
 							</div><!-- /.page-power-footer -->
 
-
-
-
 						</div><!-- /.page-power-body -->
+
+						<div class="page-power-copy">
+								© 2019 Ice Rock mining
+						</div><!-- /.page-power-copy -->
 
 						
 					</div><!-- /.page-power -->
