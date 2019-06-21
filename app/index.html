@@ -10,12 +10,12 @@
 	<!--Fonts Googlle  -->
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	
-
+<!--Библиотека poweranger (для ползунка)-->
+	<link href="css/powerange.min.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="sass/main.css">
-	<!--Библиотека poweranger (для ползунка)-->
-	<link href="css/powerange.min.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -110,7 +110,9 @@
           
 									</div><!-- /.page-power-body-row__panel -->
 									<div class="page-power-body-row__slider">
-										<input type="text" min="0" max="10000" value="500" step="100" class="slider" id="myRange" oninput="calc()">
+										<!-- <input type="range" min="0" max="10000" value="500" step="100" class="slider" id="myRange" oninput="calc()"> -->
+										<input type="text" class="slider" id="myRange">
+										
 									</div><!-- /.page-power-body-row__slider -->
 
 									<div class="page-power-body-row__btn">
